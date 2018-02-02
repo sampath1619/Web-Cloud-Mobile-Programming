@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Course Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href="../Content/CSS/home.css" rel="stylesheet" />
+</head>
+
+<body class="container-fluid bg" >
+    <div class="header" style="text-align:center">
+        <h2>Course Registration Website</h2>
+    </div> <br /> <br />
+    <div class="row" >
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <h4 class="text-info">Click on Register button to register the course</h4>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover table-striped"  style="width:300px;height:30px;margin-left:50px">
+                    <thead>
+                        <tr>
+                            <th>Total Seats</th>
+                            <th>Available Seats</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>50</td>
+                            <td id="remainingSeats">30</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="registered" style="color:red;"></div> <br />
+            <button class="btn btn-success" id="register" >Register</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        developed by SAM 
+    </div>
+   
+    <script src="../Scripts/Pages/register.js"></script>
+</body>
+</html>

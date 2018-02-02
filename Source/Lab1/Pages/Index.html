@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Course Registration Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <link href="../Content/CSS/home.css" rel="stylesheet" />
+
+    
+</head>
+<body >
+    <div class="container-fluid">
+    <div class="header" >
+        <h3>Course Registration Website</h3>
+    </div> <br /> <br />
+   
+    <div class="row text-center">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+
+            <dl class="dl-horizontal">
+                <dt>
+                    Select Education<span style="color:red">*</span>
+                </dt>
+                <dd>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-info btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            --Select-- <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" id="education">
+                            <li><a class="dropdown-item" href="#">Bachelors</a></li>
+                            <li><a class="dropdown-item" href="#">Masters</a></li>
+                        </ul>
+                    </div>
+                </dd>
+                <br />
+                <dt>
+                    <label for="semtr">Select Semester <span style="color:red">*</span></label>
+                </dt>
+                <dd>
+                    <div class="btn-group ">
+                        <button type="button" class="btn btn-info btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            --Select-- <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" id="sem">
+                            <li><a class="dropdown-item" href="#">Spring</a></li>
+                            <li><a class="dropdown-item" href="#">Fall</a></li>
+                            <li><a class="dropdown-item" href="#">Summer</a></li>
+                        </ul>
+                    </div>
+                </dd>
+                <br />
+                <dt>
+                    <label for="carOption">Career Option<span style="color:red">*</span></label>
+                </dt>
+                <dd>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-info btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            --Select-- <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" id="career_option">
+                            <li><a class="dropdown-item" href="#">Computer Science</a></li>
+                            <li><a class="dropdown-item" href="#">Law</a></li>
+                        </ul>
+                    </div>
+                </dd>
+
+            </dl>
+
+            <div id="error" style="margin-left:40px;color:red"></div>
+            <button class="btn btn-success btn-sm" style="margin-left:130px" id="Submit">Submit</button>
+        </div>
+    </div>
+       
+    <div class="table-responsive">
+        <table class="table table-hover table-striped" id="availableClasses" style="width:100%;height:50px;">
+            <thead>
+                <tr>
+                    <th>Instructor</th>
+                    <th>Course Description</th>
+                    <th>Prerequisites</th>
+                    <th>Credit hours</th>
+                    <th>Duration</th>
+                    <th>Rating</th>
+                    <th>Reviews</th>
+                    <th>Similar courses</th>
+                    <th class="align-content-center">Image</th>
+                    <th>URL</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="lee">
+                    <td>Appie Van De Liefvoort</td>
+                    <td>DAA</td>
+                    <td>Data Structure</td>
+                    <td>3.00</td>
+                    <td>Fr 3:00PM - 6:00PM</td>
+                    <td>5</td>
+                    <td>Excellent course structure and teaching</td>
+                    <td>
+                        <ul>
+                            <li><a href="https://www.udacity.com/courses/software-engineering">Udacity</a></li>
+                            <li><a href="https://www.udemy.com/courses/development/software-engineering/">Udemy</a></li>
+                            <li><a href="https://www.coursera.org/courses/software-engineering">Coursera</a></li>
+                        </ul>
+                    </td>
+                    <td align="center">
+                       
+                        <a href="CourseRegistration.html"> <img src="../Images/daa.png" height="100" width="100" /> </a>
+                    </td>
+                    <td><a href="CourseRegistration.html">Registration URL</a> </td>
+                </tr>
+                <tr id="choi">
+                    <td>Praveen Rao</td>
+                    <td>Principles of Big Data Management </td>
+                    <td>Big Data</td>
+                    <td>4.00</td>
+                    <td>MoWe 4:00PM - 5:15PM</td>
+                    <td>3</td>
+                    <td>Instructor has good knowledge about the course.</td>
+                    <td>
+                        <ul>
+                            <li><a href="https://www.coursera.org/specializations/cloud-computing/">Coursera</a></li>
+                            <li><a href="https://www.udemy.com/introduction-to-cloud-computing/ ,">Udemy</a></li>
+                            <li><a href="https://www.edx.org/course/subject/computer-science/cloud-computing">Edx</a></li>
+                        </ul>
+                    </td>
+                    <td align="center">
+                        <a href="CourseRegistration.html"> <img src="../Images/cloud.jpg" height="100" width="100" /> </a>
+                    </td>
+                    <td><a href="CourseRegistration.html">Registraation URL</a> </td>
+                </tr>
+                <tr id="zheng">
+                    <td>Lee</td>
+                    <td>Advanced Software Engineering </td>
+                    <td>SE</td>
+                    <td>3.00</td>
+                    <td>TuTh 2:30PM - 3:45PM</td>
+                    <td>4.5</td>
+                    <td>We can gain good knowledge about Plugins and different software tools</td>
+                    <td>
+                        <ul>
+                            <li><a href="https://www.capterra.com/training-software/">Capterra</a></li>
+                            <li><a href="https://www.udemy.com/courses/development/development-tools/">Udemy</a></li>
+                            <li><a href="https://www.edx.org/course/agile-software-development">Edx</a></li>
+                        </ul>
+                    </td>
+                    <td align="center">
+                        <a href="CourseRegistration.html"><img src="../Images/ase.png" height="100" width="100" /></a>
+                    </td>
+                    <td><a href="CourseRegistration.html">Registration URL</a> </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <div class="footer">
+        Developed by SAM 
+    </div>
+
+
+
+
+
+
+
+    <script src="../Scripts/Pages/Index.js"></script>
+        </div>
+</body>
+</html>
