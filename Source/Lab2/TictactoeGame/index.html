@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html ng-app="ngOughts">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Tic-Tac-Toe</title>
+
+    <link rel="stylesheet" href="bootstrap/tether.min.css" />
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/myStyle.css" />
+    <link rel="stylesheet" href="css/media-queries.css" />
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" />
+
+    <style type="text/css">
+        table {
+            margin: 10px;
+            border: black 1px solid;
+            margin-left: 590px;
+        }
+        tr {
+            margin: 2px;
+        }
+        td {
+            border: green 1px solid;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            font-size: 24px;
+        }
+        .winning {
+            background-color: darkred;
+            color: white;
+        }
+    </style>
+
+
+
+</head>
+<body ng-controller="BoardCtrl" style="background-color: aliceblue">
+<div class="container-fluid" style="text-align: center">
+<header> Welcome to Tic-Tac-Toe Game</header>
+    <div class="row">
+        <div class="col-sm-12">
+            <h1 ng-show="board.won" ng-cloak>{{board.winning_marker}} won the game!</h1>
+            <table>
+                <tr ng-repeat="row in board.grid">
+                    <td ng-repeat="cell in row" ng-click="board.playCell(cell)" ng-class="{'winning': cell.winning}">
+                        <span ng-bind="cell.marker"></span>
+                    </td>
+                </tr>
+            </table>
+            <button ng-click="board.reset()">Reset</button>
+            <p><b>INSTRUCTIONS:</b>
+                Click to place an O,X in a square. Make three O or X in a row to win.</p>
+            <p>Player One: O</p>
+            <p>Player Two: X</p>
+            <p>Click Reset to restart the game</p>
+        </div>
+    </div>
+
+
+
+<script src="scripts/public/jquery-3.2.1.min.js"></script>
+<script src="scripts/public/tether.min.js"></script>
+<script src="scripts/public/bootstrap.min.js"></script>
+<script src="scripts/public/modernizr.js"></script>
+<script src="scripts/public/jquery-ui.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.js"></script>
+<script src="scripts/game.js"></script>
+</div>
+</body>
+</html>
