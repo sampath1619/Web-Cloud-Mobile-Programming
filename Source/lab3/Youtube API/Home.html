@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My AngularJS App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body class="body" style="background-image">
+
+<div ng-controller="View1Ctrl" style="top: 200px">
+<div class="row">
+    <div class="col-md-6">
+        <div class="menu" id="div_SearchContainer">
+            <h1 align="absolute" style="text-align: center; color: #1ab188">Youtube API</h1>
+            <input type="text" id="txt_search" placeholder="Enter the keyword you want to search for"
+                   style="margin-left: 100px"/>
+            <button id="btn_getResults" ng-click="getVideos()">Get Videos</button>
+        </div>
+
+
+        <div ng-show=" resulttrue ">
+            <h2 style="text-align: center; color: #1ab188"> Top Results from YOUTUBE API</h2>
+
+            <div ng-repeat="id in YoutubeUrl"
+                 style="font-size: x-large; color: #5e5e5e; text-align: center; list-style: none">
+
+                {{ id.title }}
+                <iframe type="text/html" width="300" height="200" ng-src="{{ id.vurl }}" frameborder="0"></iframe>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
