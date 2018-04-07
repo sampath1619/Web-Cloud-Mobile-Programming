@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.gattu.androidapp.Setting">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="72dp"
+        android:text="Contact US"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="105dp"
+        android:text="
+        DOMESTIC STUDENTS
+            admit@umkc.edu
+            Phone: 816-235-1111
+            Toll-Free: 1-800-775-8652
+
+        INTERNATIONAL STUDENTS
+            isao@umkc.edu
+            Phone: 816-235-1113
+            Toll-Free: 1-800-775-8652
+
+        MAILING ADDRESS
+            University of Missouri-Kansas City
+            Office of Admissions
+            5100 Rockhill Road
+            Kansas City, MO 64110"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="82dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="6dp"
+        android:text="Home"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

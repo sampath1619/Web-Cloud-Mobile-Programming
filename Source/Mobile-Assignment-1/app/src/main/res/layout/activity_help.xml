@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.gattu.androidapp.Help">
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="16dp"
+        android:onClick="Home"
+        android:text="HOME"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="27dp"
+        android:layout_marginStart="27dp"
+        android:text="
+        Schools and Departments
+            College of Arts and Sciences
+            Dean Wayne Vaught
+            302 Scofield Hall
+            711 E 51st St.
+            Kansas City, MO 64110
+            (816)235-1136
+
+        Conservatory of Music and Dance
+            Interim Dean Diane Petrella
+            417 Performing Arts Center
+            4949 Cherry Street
+            Kansas City, MO 64110
+            (816)235-2900
+
+        Henry W. Bloch School of Management
+            Dean Brian Klaas
+            227 Bloch School
+            5110 Cherry St.
+            Kansas City, Mo 64110
+            (816)235-2215 | email: bloch@umkc.edu
+
+        Honors College
+            Dean James McKusick
+            424 Cherry Hall
+            5030 Cherry Street
+            Kansas City, MO 64110
+            (816)235-2182 | email: honors@umkc.edu
+
+        School of Biological Sciences
+            Dean Theodore White
+            5007 Rockhill Road
+            Kansas City, MO 64110
+            (816)235-5246 | email: SBS@umkc.edu"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
+</android.support.constraint.ConstraintLayout>

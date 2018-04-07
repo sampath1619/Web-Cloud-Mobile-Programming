@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.gattu.androidapp.Index">
+
+    <Button
+        android:id="@+id/txt_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="560dp"
+        android:onClick="Setting"
+        android:text="Contact US"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="161dp"
+        android:layout_marginEnd="1dp"
+        android:onClick="Help"
+        android:text="academics"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txt_home"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text=" ABOUT UMKC
+
+        We are the largest comprehensive, fully accredited university in the Kansas City area. Our faculty are leaders in their fields – and they're within reach. Our 14:1 student-to-faculty ratio means professors know their students' names and take mentorship seriously.
+
+            Our students come from all 50 states and 85+ countries, enriching our community with diverse perspectives. And with more than 125 academic areas, our students have a lot of opportunities to explore on their way to discovering and creating their perfect career.
+
+            We're at the heart of a thriving urban area, and the city's life and energy influence everything that happens here. We are Kansas City's university. And we can't wait for you to join us."
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
